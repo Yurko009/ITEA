@@ -10,21 +10,14 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.Write("Input number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("Input width: ");
-            int width = Convert.ToInt32(Console.ReadLine());
-
-            for (int i = 0; i < width; i++)
-            {
-                for (int j = 0; j < width - i; j++)
-                {
-                    Console.Write(number.ToString());
-                }
-                Console.Write("\n");
-            }
-            Console.ReadKey();
+            string num1, num2, num3;
+            Console.WriteLine("Enter number 1 :");
+            num1 = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter number 2 :");
+            num2 = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("Enter number 3 :");
+            num3 = Convert.ToString(Console.ReadLine());
+            Console.WriteLine("{0},{1},{2}", num3, num2, num1);
         }
     }
 }
